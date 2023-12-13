@@ -1,13 +1,16 @@
 #YAML Script for DBT:
 
 trigger:
-- main
+- none
 
 schedules:
 - cron: '*/5 * * * *'
+  displayName: 'Run Every 5 Minutes'
   branches:
     include:
-    - main
+    - 'main'
+  always: true
+  batch: false
 
 jobs:
 - job: RunDbtModels
