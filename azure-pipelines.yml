@@ -1,9 +1,9 @@
 #YAML Script for DBT:
 
-trigger:
+#trigger:
 - none
 
-schedules:
+#schedules:
 - cron: '*/5 * * * *'
   displayName: 'Run Every 5 Minutes'
   branches:
