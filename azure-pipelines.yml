@@ -1,7 +1,7 @@
 #YAML Script for DBT:
 
-#trigger:
-- none
+trigger:
+- main
 
 schedules:
 - cron: '*/5 * * * *'
